@@ -11,10 +11,85 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="styles.css" />
-    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <title>
+      Kekeli Afantchao Portfolio Site | Frontend Developer | HTML - CSS - ES6+ -
+      React
+    </title>
+
+    <!-- NAVBAR -->
+    <div class="nav navbar navbar-dark navbar-expand-lg bg-dark text-light">
+      <div class="container">
+        <!-- I think I'll have to use custom css for the hover/find out how it's done with bootstrap -->
+        <a href="#" class="navbar-brand text-light">Kekeli</a>
+        <!-- I'm not sure why justify content needs to be here instead of on the ul and the d-flex not on the parent div
+        perhaps the d-flex has to be on the ul because the links are the children/flex-items that need to be affected. However,
+        why couldn't the whole ul move to the end? I could test this out. Also seems I should review some flexbox stuff -->
+
+        <!-- review how this works, because I do not know about the toggler class and I forgot about data attributes -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-end theme-pink"
+          id="navmenu"
+        >
+          <ul class="navbar-var d-flex list-unstyled navbar-text-light mb-0">
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#resume" class="nav-link">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </head>
-  <body>
-    test
+  <body class="bg-dark">
+    <!-- Showcase -->
+    <section class="text-light text-center text-sm-start" id="about">
+      <div class="container border-success">
+        <div class="d-flex">
+          <div class="w-50 pt-5 mt-5 mx-2">
+            <h4 class="kekeli-title">
+              Kekeli Afantchao
+              <span class="theme-pink">Frontend Web Developer</span>
+            </h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+              itaque saepe fuga debitis est, dicta laborum iste perspiciatis,
+              enim eos esse at ipsa ut laboriosam amet repudiandae nulla fugiat
+              voluptas voluptates culpa dolor ab hic molestiae! Libero, veniam
+              repellat consequuntur obcaecati perferendis mollitia molestias
+              minima qui eaque id maxime aliquid magnam facilis quidem dolorum
+              quo magni necessitatibus, consectetur ipsa. Consectetur?
+            </p>
+          </div>
+          <!-- don't display image until it hits sm breakpoint -->
+          <img
+            src="/assets/app_development_SVG.svg"
+            class="img-fluid w-25 d-none d-sm-block laptop-img"
+            alt="illustration of code terminal"
+          />
+        </div>
+      </div>
+    </section>
   </body>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
