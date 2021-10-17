@@ -9,6 +9,11 @@ body {
   margin-top: 3%;
 }
 
+/* #about {
+  justify-content: space-between;
+  flex-wrap: wrap;
+} */
+
 /* theme-utilities */
 
 .theme-pink {
