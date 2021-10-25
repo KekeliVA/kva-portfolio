@@ -4,10 +4,15 @@ body {
 
 /* positioning */
 
-.laptop-img {
+/* .laptop-img {
   margin-left: 15%;
   margin-top: 3%;
-}
+} */
+
+/* #about {
+  justify-content: space-between;
+  flex-wrap: wrap;
+} */
 
 /* theme-utilities */
 
