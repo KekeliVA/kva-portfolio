@@ -1,18 +1,16 @@
+/* globals */
+
 body {
   font-family: "Roboto Mono", monospace;
 }
 
+/* i think this technically isn't a global */
+.card-img-top {
+  min-height: 20rem;
+  max-width: 100%;
+}
+
 /* positioning */
-
-/* .laptop-img {
-  margin-left: 15%;
-  margin-top: 3%;
-} */
-
-/* #about {
-  justify-content: space-between;
-  flex-wrap: wrap;
-} */
 
 /* theme-utilities */
 
@@ -24,14 +22,11 @@ body {
   color: #fbaccc;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.btn:hover {
   color: #fff;
 }
 
 .theme-gray {
   background-color: #212529;
 }
-
-/* .nav-item {
-  padding: 0.5em;
-} */
