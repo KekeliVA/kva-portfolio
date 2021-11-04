@@ -1,5 +1,8 @@
 /* globals */
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Roboto Mono", monospace;
 }
@@ -8,6 +11,14 @@ body {
 .card-img-top {
   min-height: 20rem;
   max-width: 100%;
+}
+
+.fab {
+  color: #fff;
+}
+
+.icons-container {
+  padding: 3rem;
 }
 
 /* positioning */
@@ -22,8 +33,7 @@ body {
   color: #fbaccc;
 }
 
-.nav-link:hover,
-.btn:hover {
+.nav-link:hover {
   color: #fff;
 }
 

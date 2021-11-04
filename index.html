@@ -10,18 +10,20 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
     <link rel="stylesheet" href="styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
       rel="stylesheet"
     />
+    <!-- <a href="https://www.vecteezy.com/free-vector/coding">Coding Vectors by Vecteezy</a> -->
     <title>
       Kekeli Afantchao Portfolio Site | Frontend Developer | HTML - CSS - ES6+ -
       React
     </title>
 
     <!-- NAVBAR -->
-    <div class="nav navbar navbar-dark navbar-expand-lg bg-dark text-light">
+    <div class="nav navbar navbar-dark navbar-expand-lg mb-5 fixed-top bg-dark text-light">
       <div class="container">
         <!-- I think I'll have to use custom css for the hover/find out how it's done with bootstrap -->
         <a href="#" class="navbar-brand text-light">Kekeli</a>
@@ -64,7 +66,8 @@
   <body class="bg-dark">
     <!-- About -->
     <section class="text-light text-center text-sm-start" id="about">
-      <div class="container">
+      <div class="container my-5">
+        <h4 class="theme-pink text-center p-3 mt-3">About</h4>
         <div class="row">
           <div class="col text-center my-5">
             <!-- <div class="d-flex align-items-center text-center" id="about">
@@ -101,15 +104,15 @@
     </section>
     <!-- Projects -->
     <section id="projects">
-      <h3>Projects</h3>
       <div class="container text-light text-center my-5">
+        <h3 class="text-center my-5 theme-pink">Projects</h3>
         <div class="row d-md-flex justify-content-center">
           <div class="col-12 col-md-4 my-5 ">
             <div class="card">
               <img src="./assets/find-and-dine.png" class="card-img-top img-fluid" alt="...">
-              <div class="card-body bg-dark">
+              <div class="card-body bg-light">
                 <h5 class="card-title theme-pink">Find And Dine</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text text-dark">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 <div class="d-flex justify-content-center m-2">
                   <a href="#" class="btn theme-pink">Go somewhere</a>
                   <a href="#" class="btn theme-pink">Go somewhere</a>
@@ -147,9 +150,29 @@
       </div>
 
             
+          <!-- </div>
+        </div>
+      </div> -->
+    </section>
+    <!-- Resume -->
+    <!-- <section></section> -->
+    <!-- Skills/Tools/Technologies -->
+    <section id="tools-tech">
+      <div class="container icons-container my-5">
+        <div class="row d-md-flex justify-content-center">
+          <div class="col">
+            <!-- the icon is there, just completely blending in with my bg-dark -->
+            <div class="icon d-md-flex justify-content-center">
+              <i class="fab fa-3x fa-html5 mx-5"></i>
+              <i class="fab fa-3x fa-css3-alt mx-5"></i>
+              <i class="fab fa-3x fa-js mx-5"></i>
+              <i class="fab fa-3x fa-react mx5"></i>
+              <i class="fab fa-3x fa-node-js mx-5"></i>
+              <i class="fab fa-3x fa-bootstrap mx-5"></i>
+              <i class="fab fa-3x fa-github-square mx-5"></i>
+            </div>
           </div>
         </div>
-      </div>
     </section>
   </body>
   <script
