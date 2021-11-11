@@ -7,6 +7,10 @@ body {
   font-family: "Roboto Mono", monospace;
 }
 
+textarea {
+  height: 15rem;
+}
+
 /* i think this technically isn't a global */
 .card-img-top {
   min-height: 20rem;
@@ -19,6 +23,12 @@ body {
 
 .icons-container {
   padding: 3rem;
+}
+
+/* name this eventually */
+.adopt-me {
+  max-width: 100%;
+  height: auto;
 }
 
 /* positioning */

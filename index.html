@@ -21,7 +21,10 @@
       Kekeli Afantchao Portfolio Site | Frontend Developer | HTML - CSS - ES6+ -
       React
     </title>
-
+  </head>
+  
+  <body class="bg-dark">
+    <!-- TODO analyze each component's features and responsiveness -->
     <!-- NAVBAR -->
     <div class="nav navbar navbar-dark navbar-expand-lg mb-5 fixed-top bg-dark text-light">
       <div class="container">
@@ -62,12 +65,12 @@
         </div>
       </div>
     </div>
-  </head>
-  <body class="bg-dark">
-    <!-- About -->
-    <section class="text-light text-center text-sm-start" id="about">
-      <div class="container my-5">
-        <h4 class="theme-pink text-center p-3 mt-3">About</h4>
+  <!-- TODO figure out what and why styles are taking and others aren't -->
+  <!-- About -->
+    <!-- take these classes off the section, this isn't consistent, and may not even be doing anything -->
+    <section id="about">
+      <div class="container text-light text-center text-sm-start">
+        <h4 class="theme-pink text-center p-2 my-5">About</h4>
         <div class="row">
           <div class="col text-center my-5">
             <!-- <div class="d-flex align-items-center text-center" id="about">
@@ -76,7 +79,7 @@
                   Kekeli Afantchao
                   <span class="d-none d-md-inline theme-pink">Frontend Web Developer</span>
                 </h4>
-                <h4 class="d.none d-xs-block d-md-none my-3 theme-pink">Frontend Web Developer</h4>
+                <h4 class="d-xs-block d-md-none my-3 theme-pink">Frontend Web Developer</h4>
 
                 <p class="text-sm-center my-5">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
@@ -92,12 +95,12 @@
           
           <div class="col">
             <!-- don't display image until it hits sm breakpoint -->
+            <!-- TODO change this image to the other svg, find others til you find one that works well -->
             <img
               src="/assets/app_development_SVG.svg"
               class="img-fluid w-25 mx-auto d-none d-sm-block laptop-img"
               alt="illustration of code terminal"
             />
-          </div>
           </div>
         </div>
       </div>
@@ -109,7 +112,7 @@
         <div class="row d-md-flex justify-content-center">
           <div class="col-12 col-md-4 my-5 ">
             <div class="card">
-              <img src="./assets/find-and-dine.png" class="card-img-top img-fluid" alt="...">
+              <img src="./assets/find-and-dine.png" class="card-img-top img-fluid find-and-dine" alt="...">
               <div class="card-body bg-light">
                 <h5 class="card-title theme-pink">Find And Dine</h5>
                 <p class="card-text text-dark">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -122,7 +125,7 @@
           </div>
           <div class="col-12 col-md-4 my-5 ">
             <div class="card">
-              <img src="./assets/backlog-app-capture.png" class="card-img-top img-fluid" alt="...">
+              <img src="./assets/backlog-app-capture.png" class="card-img-top img-fluid backlog-app" alt="...">
               <div class="card-body bg-dark">
                 <h5 class="card-title theme-pink">Find And Dine</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -135,7 +138,7 @@
           </div>
           <div class="col-12 col-md-4 my-5 ">
             <div class="card">
-              <img src="./assets/adoptme_site.png" class="card-img-top img-fluid" alt="...">
+              <img src="./assets/adoptme_site.png" class="card-img-top img-fluid adopt-me" alt="...">
               <div class="card-body bg-dark">
                 <h5 class="card-title theme-pink">Find And Dine</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -149,30 +152,52 @@
         </div>
       </div>
 
-            
-          <!-- </div>
-        </div>
-      </div> -->
     </section>
+    <!-- TODO maybe a picture of the resume will be better, or i could style one myself with html -->
     <!-- Resume -->
     <!-- <section></section> -->
     <!-- Skills/Tools/Technologies -->
     <section id="tools-tech">
       <div class="container icons-container my-5">
-        <div class="row d-md-flex justify-content-center">
+        <div class="row d-md-flex d-none justify-content-center">
           <div class="col">
             <!-- the icon is there, just completely blending in with my bg-dark -->
-            <div class="icon d-md-flex justify-content-center">
+            <div class="icon d-md-flex justify-content-center d-">
               <i class="fab fa-3x fa-html5 mx-5"></i>
               <i class="fab fa-3x fa-css3-alt mx-5"></i>
               <i class="fab fa-3x fa-js mx-5"></i>
-              <i class="fab fa-3x fa-react mx5"></i>
+              <i class="fab fa-3x fa-react mx-5"></i>
               <i class="fab fa-3x fa-node-js mx-5"></i>
               <i class="fab fa-3x fa-bootstrap mx-5"></i>
               <i class="fab fa-3x fa-github-square mx-5"></i>
             </div>
           </div>
         </div>
+    </section>
+    <!-- Call-To-Action -->
+    <section class="call-to-action">
+      <!-- TODO call-to-action form needs to get implemented and styled -->
+      <div class="container call-to-action text-light">
+        <div class="text-center">
+          <h2 class="theme-pink">Let's Talk</h2>
+          <p>Do you have an opportunity for me? Feel free to fill out the form to get in contact with me</p>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <form action="https://script.google.com/macros/s/AKfycbwSjwpp_sYT4YfW7Xxd44agNa1-I3G0wJCO2Ff2kDVxtr5H7QL2XgeqhSfqluz_jWtOzA/exec" class="g-form" method="POST" data-email="kekeli.afantchao@gmail.com"></form> 
+              <label for="email" class="form-label my-3">Email address:</label>
+              <input type="email" class="form-control" id="email" placeholder="e.g. john.doe@gmail.com" required>
+
+              <label for="name" class="form-label my-3">Name:</label>
+              <input type="text" class="form-control" id="name" placeholder="e.g. John Doe" required>
+
+              <label for="inquiry" class="form-label my-3">Ask Away:</label>
+              <textarea class="form-control mb-5" id="inqury" placeholder="e.g. I'd love to start the interview process with you!" required></textarea>
+              <button class="btn text-dark bg-light" type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
   </body>
   <script
