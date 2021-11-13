@@ -30,9 +30,6 @@
       <div class="container">
         <!-- I think I'll have to use custom css for the hover/find out how it's done with bootstrap -->
         <a href="#" class="navbar-brand text-light">Kekeli</a>
-        <!-- I'm not sure why justify content needs to be here instead of on the ul and the d-flex not on the parent div
-        perhaps the d-flex has to be on the ul because the links are the children/flex-items that need to be affected. However,
-        why couldn't the whole ul move to the end? I could test this out. Also seems I should review some flexbox stuff -->
 
         <!-- review how this works, because I do not know about the toggler class and I forgot about data attributes -->
         <button
@@ -56,45 +53,35 @@
               <a href="#projects" class="nav-link">Projects</a>
             </li>
             <li class="nav-item">
-              <a href="#resume" class="nav-link">Resume</a>
-            </li>
-            <li class="nav-item">
               <a href="#contact" class="nav-link">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </div>
-  <!-- TODO figure out what and why styles are taking and others aren't -->
   <!-- About -->
-    <!-- take these classes off the section, this isn't consistent, and may not even be doing anything -->
     <section id="about">
       <div class="container text-light text-center text-sm-start">
         <h4 class="theme-pink text-center p-2 my-5">About</h4>
         <div class="row">
           <div class="col text-center my-5">
-            <!-- <div class="d-flex align-items-center text-center" id="about">
-              <div class="w-50 pt-5 mx-2 mt-5"> -->
-                <h4 class="kekeli-title">
-                  Kekeli Afantchao
-                  <span class="d-none d-md-inline theme-pink">Frontend Web Developer</span>
-                </h4>
-                <h4 class="d-xs-block d-md-none my-3 theme-pink">Frontend Web Developer</h4>
-
-                <p class="text-sm-center my-5">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-                  itaque saepe fuga debitis est, dicta laborum iste perspiciatis,
-                  enim eos esse at ipsa ut laboriosam amet repudiandae nulla fugiat
-                  voluptas voluptates culpa dolor ab hic molestiae! Libero, veniam
-                  repellat consequuntur obcaecati perferendis mollitia molestias
-                  minima qui eaque id maxime aliquid magnam facilis quidem dolorum
-                  quo magni necessitatibus, consectetur ipsa. Consectetur?
-                </p>
-              </div>
+            <h4 class="kekeli-title">
+              Kekeli Afantchao
+              <span class="d-none d-md-inline theme-pink">Frontend Web Developer</span>
+            </h4>
+            <h4 class="d-xs-block d-md-none my-3 theme-pink">Frontend Web Developer</h4>
+            <p class="text-sm-center my-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+              itaque saepe fuga debitis est, dicta laborum iste perspiciatis,
+              enim eos esse at ipsa ut laboriosam amet repudiandae nulla fugiat
+              voluptas voluptates culpa dolor ab hic molestiae! Libero, veniam
+              repellat consequuntur obcaecati perferendis mollitia molestias
+              minima qui eaque id maxime aliquid magnam facilis quidem dolorum
+              quo magni necessitatibus, consectetur ipsa. Consectetur?
+            </p>
           </div>
-          
+        </div>          
           <div class="col">
-            <!-- don't display image until it hits sm breakpoint -->
             <!-- TODO change this image to the other svg, find others til you find one that works well -->
             <img
               src="/assets/app_development_SVG.svg"
@@ -153,20 +140,14 @@
       </div>
 
     </section>
-    <!-- TODO maybe a picture of the resume will be better, or i could style one myself with html -->
-    <!-- Resume -->
-    <!-- <section>
-      <div class="container resume">
-        <embed src="./assets/kva_resume_template.pdf" type="application/pdf" height="600rem" width="100%">
-      </div>
-    </section>  -->
+    <!-- TODO omit resume section or replace with something else -->
     <!-- Skills/Tools/Technologies -->
     <section id="tools-tech">
       <div class="container icons-container my-5">
         <div class="row d-md-flex d-none justify-content-center">
           <div class="col">
             <!-- the icon is there, just completely blending in with my bg-dark -->
-            <div class="icon d-md-flex justify-content-center d-">
+            <div class="icon d-md-flex justify-content-center" id="tech">
               <i class="fab fa-3x fa-html5 mx-5"></i>
               <i class="fab fa-3x fa-css3-alt mx-5"></i>
               <i class="fab fa-3x fa-js mx-5"></i>
@@ -177,11 +158,11 @@
             </div>
           </div>
         </div>
+      </div>
     </section>
     <!-- Call-To-Action -->
     <section class="call-to-action">
-      <!-- TODO call-to-action form needs to get implemented and styled -->
-      <div class="container call-to-action text-light">
+      <div class="container call-to-action text-light" id="contact">
         <div class="text-center">
           <h2 class="theme-pink">Let's Talk</h2>
           <p>Do you have an opportunity for me? Feel free to fill out the form to get in contact with me</p>
@@ -203,6 +184,12 @@
         </div>
       </div>
     </section>
+    <footer>
+      <div class="footer-content d-flex justify-content-center">
+        <h4 class="thank-you">Thanks for visiting <span><i class="fas fa-heart text-light"></i></span></h4>
+      </div>
+
+    </footer>
   </body>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
