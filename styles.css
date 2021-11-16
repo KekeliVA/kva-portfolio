@@ -2,41 +2,56 @@
 
 html {
   scroll-behavior: smooth;
+  height: 100%;
+  margin: 0;
 }
 body {
   font-family: "Roboto Mono", monospace;
+  margin: 100%;
+  margin: 0;
 }
 
 textarea {
   height: 15rem;
 }
 
-/* i think this technically isn't a global */
+footer {
+  height: 150px;
+  background-color: #17191a;
+}
+
+/* sizing and spacing */
+
 .card-img-top {
   min-height: 20rem;
   max-width: 100%;
-}
-
-.fab {
-  color: #fff;
 }
 
 .icons-container {
   padding: 3rem;
 }
 
-/* name this eventually */
 .adopt-me {
   max-width: 100%;
   height: auto;
 }
 
-/* positioning */
+.call-to-action__spacing {
+  margin-bottom: 1%;
+}
+
+#laptop-svg {
+  margin-bottom: 10%;
+}
 
 /* theme-utilities */
 
 .theme-pink {
   color: #fbaccc;
+}
+
+.fab {
+  color: #fff;
 }
 
 .nav-link {
