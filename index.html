@@ -23,8 +23,10 @@
   </head>
   
   <!-- TODO - write bio  -->
-  <!-- TODO - take another screenshot of adopt me without ugly black border -->
+  <!-- TODO - project card descriptions need to be written  -->
   <!-- TODO - edit links in cards to go to deployments and repos // BLOCKED - deployments are dead  -->
+  <!-- TODO - take another screenshot of adopt me without ugly black border -->
+  <!-- TODO - make anchor tags for project cards  -->
   <body class="bg-dark">
     <!-- NAVBAR -->
     <div class="nav navbar navbar-dark navbar-expand-lg mb-5 fixed-top bg-dark text-light">
@@ -60,9 +62,9 @@
   <!-- About -->
     <section id="about">
       <div class="container text-light text-center text-sm-start">
-        <h2 class="theme-pink text-center p-2 my-5">About</h2>
+        <h2 class="theme-pink text-center p-5 my-5">About</h2>
         <div class="row">
-          <div class="col text-center my-5">
+          <div class="col text-center">
             <h4 class="kekeli-title">
               Kekeli Afantchao
               <span class="d-none d-md-inline theme-pink">Frontend Web Developer</span>
@@ -100,8 +102,8 @@
                 <h5 class="card-title theme-pink">Find And Dine</h5>
                 <p class="card-text text-dark">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 <div class="d-flex justify-content-center m-2">
-                  <a href="#" class="btn theme-pink">Go somewhere</a>
-                  <a href="#" class="btn theme-pink">Go somewhere</a>
+                  <a href="https://github.com/KekeliVA/find-and-dine" class="btn theme-pink">Repo</a>
+                  <a href="#" class="btn theme-pink">Live</a>
                 </div>
               </div>
             </div>
@@ -110,24 +112,24 @@
             <div class="card">
               <img src="./assets/backlog-app-capture.png" class="card-img-top img-fluid backlog-app" alt="...">
               <div class="card-body bg-light">
-                <h5 class="card-title theme-pink">Find And Dine</h5>
+                <h5 class="card-title theme-pink">Backlog App</h5>
                 <p class="card-text text-dark">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 <div class="d-flex justify-content-center m-2">
-                  <a href="#" class="btn theme-pink">Go somewhere</a>
-                  <a href="#" class="btn theme-pink">Go somewhere</a>
+                  <a href="https://github.com/KekeliVA/backlog-app" class="btn theme-pink">Repo</a>
+                  <a href="#" class="btn theme-pink">Live</a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-4 my-5 ">
+          <div class="col-12 col-md-4 my-5">
             <div class="card">
               <img src="./assets/adoptme_site.png" class="card-img-top img-fluid adopt-me" alt="...">
               <div class="card-body bg-light">
-                <h5 class="card-title theme-pink">Find And Dine</h5>
+                <h5 class="card-title theme-pink">Adopt Me</h5>
                 <p class="card-text text-dark">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 <div class="d-flex justify-content-center m-2">
-                  <a href="#" class="btn theme-pink">Go somewhere</a>
-                  <a href="#" class="btn theme-pink">Go somewhere</a>
+                  <a href="https://github.com/KekeliVA/AdoptMe" class="btn theme-pink">Repo</a>
+                  <a href="#" class="btn theme-pink">Live</a>
                 </div>
               </div>
             </div>
@@ -137,9 +139,8 @@
 
     </section>
     <!-- Skills/Tools/Technologies -->
-    <section id="tools-tech">
-      <div class="container icons-container my-5">
-        <div class="row d-md-flex d-none justify-content-center">
+      <div class="container icons-container my-5" id="tools-tech">
+        <div class="row d-none d-lg-block justify-content-center">
           <div class="col">
             <!-- the icon is there, just completely blending in with my bg-dark -->
             <div class="icon d-md-flex justify-content-center" id="tech">
@@ -154,13 +155,12 @@
           </div>
         </div>
       </div>
-    </section>
     <!-- Call-To-Action -->
     <section class="call-to-action">
       <div class="container call-to-action text-light" id="contact">
         <div class="text-center call-to-action__spacing">
           <h2 class="theme-pink">Let's Talk</h2>
-          <p>Do you have an opportunity for me? Feel free to fill out the form to get in contact with me</p>
+          <p>Do you have an opportunity for me? Feel free to fill out the form to get in contact with me.</p>
         </div>
         <div class="row justify-content-center">
           <div class="col-lg-6">
@@ -173,8 +173,9 @@
 
               <label for="message" class="form-label my-3">Ask Away:</label>
               <textarea class="form-control mb-5" name="message" id="message" placeholder="e.g. I'd love to start the interview process with you!" required></textarea>
-              <div class="d-md-flex justify-content-center">
-                <button class="btn text-dark bg-light text-center" type="submit">Submit</button>
+              
+              <div class="d-flex justify-content-center">
+                <button class="btn text-dark bg-light" type="submit">Submit</button>
               </div>
             </form>
           </div>
@@ -184,10 +185,20 @@
     <footer>
       <div class="d-md-flex justify-content-center my-4 text-light">
         <div class="row text-center">
-          <h4>test</h4>
-          <div class="my-3"> 
-            <i class="fab fa-2x fa-github text-muted"></i>
-            <i class="fab fa-github"></i>
+          <h4 class="p-2 my-2 theme-pink">Come Find Me</h4>
+          <div class="text-light p-3">
+            <p>Thanks so much for visiting. Feel free to check out my socials.</p>
+          </div>
+          <div class="my-4">
+            <a href="https://github.com/KekeliVA" target="_blank">
+              <i class="fab fa-3x fa-github text-muted mx-3"></i>
+            </a> 
+            <a href="https://www.linkedin.com/in/afantchao/" target="_blank">
+              <i class="fab fa-3x fa-linkedin text-muted mx-3"></i>
+            </a> 
+            <a href="" target="_blank">
+              <i class="fab fa-3x fa-twitter-square text-muted mx-3"></i>
+            </a>
           </div>
         </div>
       </div>
