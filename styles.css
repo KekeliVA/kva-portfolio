@@ -53,6 +53,11 @@ a {
   margin-bottom: 10%;
 }
 
+/* #about {
+  justify-content: space-between;
+  flex-wrap: wrap;
+} */
+
 /* theme-utilities */
 
 .theme-pink {
