@@ -24,11 +24,54 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style-type: none;
+}
+
 /* sizing and spacing */
+
+.about {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 40%;
+  justify-content: center;
+  display: block;
+}
+.mobile-menu {
+  justify-content: center;
+}
+.about-row {
+  color: #fff;
+}
+
+.tagline {
+  font-size: 1.3em;
+}
+
+.branding {
+  height: 1em;
+  width: 1em;
+}
+
+.branding:hover {
+  color: #fff
+}
+
+.pfp {
+  width: 100%;
+  height: 100%;
+}
 
 .card-img-top {
   min-height: 20rem;
   max-width: 100%;
+}
+
+.container {
+  justify-content: center;
+}
+.row {
+  margin-top: 1rem;
 }
 
 .card {
@@ -48,15 +91,6 @@ a {
 .call-to-action__spacing {
   margin-bottom: 1%;
 }
-
-#laptop-svg {
-  margin-bottom: 10%;
-}
-
-/* #about {
-  justify-content: space-between;
-  flex-wrap: wrap;
-} */
 
 /* theme-utilities */
 
@@ -78,4 +112,8 @@ a {
 
 .theme-gray {
   background-color: #212529;
+}
+
+@media screen and (min-width: 300px) {
+  body { padding-top: 120px; }
 }
