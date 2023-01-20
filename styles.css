@@ -62,9 +62,6 @@ li {
     blink 500ms steps(57) infinite;
 }
 
-.fab:hover {
-  color: #fbaccc
-}
 
 @keyframes typewriter {
   to { 
@@ -145,6 +142,10 @@ li {
   color: #fff;
 }
 
+.fab:hover {
+  color: #fbaccc
+}
+
 .nav-link {
   color: #fbaccc;
 }
@@ -163,6 +164,10 @@ li {
 
 .theme-gray {
   background-color: #212529;
+}
+
+.footer-icon {
+  color: #fff
 }
 
 @media screen and (max-width: 991px) and (min-width: 300px) {
