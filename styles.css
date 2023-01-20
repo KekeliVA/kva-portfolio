@@ -38,6 +38,46 @@ li {
   justify-content: center;
   display: block;
 }
+
+.tagline::before, .tagline::after {
+  content: "";
+  position: absolute; 
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.tagline::before {
+  background: #212529;
+  border-bottom: 2px;
+  animation: typewriter 5.5s steps(57) 1s forwards;
+}
+
+.tagline::after {
+  width: .125em;
+  background: black;
+  animation: 
+    typewriter 5.5s steps(57) 1s forwards,
+    blink 500ms steps(57) infinite;
+}
+
+.fab:hover {
+  color: #fbaccc
+}
+
+@keyframes typewriter {
+  to { 
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
 .mobile-menu {
   justify-content: center;
 }
@@ -47,6 +87,7 @@ li {
 
 .tagline {
   font-size: 1.3em;
+  position: relative;
 }
 
 .branding {
@@ -108,16 +149,20 @@ li {
   color: #fbaccc;
 }
 
+.submit {
+  background-color: #fff;
+}
+
+.submit:hover {
+  background-color: #fbaccc;
+}
+
 .nav-link:hover {
   color: #fff;
 }
 
 .theme-gray {
   background-color: #212529;
-}
-
-.test {
-  margin-inline: 0;
 }
 
 @media screen and (max-width: 991px) and (min-width: 300px) {
